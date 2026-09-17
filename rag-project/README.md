@@ -86,33 +86,19 @@ Generate Grounded Answer
 
 
 
-\## Project Files
+## Project Files
 
-
-
-| File              | Purpose                                                |
-
-| ----------------- | ------------------------------------------------------ |
-
-| `Unit-II DSA.pdf` | Source document                                        |
-
-| `dsa\_text.txt`    | Extracted text from the PDF                            |
-
-| `load\_pdf.py`     | Extracts text from the PDF                             |
-
-| `chunk\_text.py`   | Splits the document into chunks                        |
-
-| `store\_chunks.py` | Stores chunks and embeddings in ChromaDB               |
-
-| `retrieve.py`     | Retrieves relevant document chunks                     |
-
-| `generate.py`     | Generates an answer using retrieved context and Gemini |
-
-| `compare.py`      | Compares No-RAG and RAG responses                      |
-
-| `chroma\_db/`      | Persistent ChromaDB storage                            |
-
-
+| File | Purpose |
+|---|---|
+| `Unit-II DSA.pdf` | Source document |
+| `dsa_text.txt` | Extracted text from the PDF |
+| `load_pdf.py` | Extracts text from the PDF |
+| `chunk_text.py` | Splits the document into chunks |
+| `store_chunks.py` | Stores chunks and embeddings in ChromaDB |
+| `retrieve.py` | Retrieves relevant document chunks |
+| `generate.py` | Generates an answer using retrieved context and Gemini |
+| `compare.py` | Compares No-RAG and RAG responses |
+| `chroma_db/` | Persistent ChromaDB storage |
 
 \## How the System Works
 
