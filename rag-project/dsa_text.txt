@@ -1,0 +1,426 @@
+
+--- Page 1 ---
+Data Structure  
+1 
+ 
+UNIT I 
+ 
+ 
+Introduction to queues: 
+Queue Data Structure is a linear data structure that follows FIFO (First In First 
+Out) Principle, so the first element inserted is the first to be popped out. In this article, we 
+will cover all the basics of Queue, Operations on Queue, its implementation, advantages, 
+disadvantages which will help you solve all the problems based on Queue. 
+ 
+ 
+ 
+Operations on queues: 
+ 
+Some of the basic operations for Queue in Data Structure are: 
+ 
+ Enqueue: Adds (or stores) an element to the end of the queue.. 
+ Dequeue: Removal of elements from the queue. 
+ Peek or front: Acquires the data element available at t he front node of the queu e 
+without deleting it. 
+ rear: This operation returns the element at the rear end without removing it. 
+ isFull: Validates if the queue is full. 
+ isEmpty: Checks if the queue is empty. 
+There are a few supporting operations (auxiliary operations): 
+ 
+Queues: Introduction –Operations on queues –Circular Queues –Other types Queue – 
+Application of Linear queues: Time sharing system –Linked Lists: Introduction –Singly 
+linked lists - Circularly linked lists - Doubly Linked Lists – Application of Linked Li st-
+Polynomial addition. 
+
+--- Page 2 ---
+Data Structure  
+2 
+ 
+1. Enqueue Operation in Queue Data Structure:  
+Enqueue() operation in Queue adds (or stores) an element to the end of the queue. 
+The following steps should be taken to enqueue (insert) data into a queue: 
+ 
+Step 1: Check if the queue is full. 
+Step 2: If the queue is full, return overflow error and exit. 
+Step 3: If the queue is not full, increment the rear pointer to point to the next empty space. 
+Step 4: Add the data element to the queue location, where the rear is pointing. 
+Step 5: return success. 
+ 
+Circular Queues: 
+A Circular Queue is an extended version of a  normal queue where the last element 
+of the queue is connected to the first element of the queue forming a circle.  The operations 
+are performed based on FIFO (First In First Out) principle. It is also called  ‘Ring Buffer’.  
+  
+ 
+In a normal Queue, we can insert elements until queue becomes full. But once queue 
+becomes full, we can not insert the next element even if there is a space in front of queue.  
+Operations on Circular Queue:  
+ Front: Get the front item from the queue.  
+ Rear: Get the last item from the queue.  
+--- Page 3 ---
+Data Structure  
+3 
+ 
+ enQueue(value) This function is used to insert an element into the circular 
+queue. In a circular queue, the new eleme nt is always inserted at the rear 
+position.  
+ Check whether the queue is full – [i.e., the rear end is in just before the 
+front end in a circular mann er]. 
+ If it is full then display Queue is full.   
+ If the queue is not full then,  insert an element at the en d of the queue.  
+ deQueue() This function is used to delete an element from the circular queue. In 
+a circular queue, the element is always deleted from  the front position.   
+ Check whether the queue is Empty.  
+ If it is empty then display Queue is empty . 
+ If the queue is not empty, then g et the last element and remove it from 
+the queue. 
+Other types Queue: 
+A priority queue is an abstract data type that behaves  similarly to the normal queue 
+except that each element has some priority, i.e., the element with the highest priority would 
+come first in a priority q ueue. The priority of the elements in a priority queue will determine 
+the order in which elements are removed from the priority queue. 
+The priority queue supports only comparable elements, which means that the elements 
+are either arranged in an ascending or descending order. 
+For example, suppose we have some values like 1, 3, 4, 8, 14, 22 inserted in a priori ty 
+queue with an ordering imposed on the values is from least to the greatest. Therefore, the 1 
+number would be having the highest priority while 22 will be having the lowest priority. 
+Characteristics of a Priority queue 
+A priority queue is an extension of a queue that contains the following characteristics: 
+o Every element in a priority queue has some priority associated with it. 
+o An element with the high er priority will be deleted before the deletion of the lesser 
+priority. 
+--- Page 4 ---
+Data Structure  
+4 
+ 
+o If two elements in a priority queue have the same priority, they will be arranged using 
+the FIFO principle. 
+Let's understand the priority queue through an example. 
+We have a priority queue that contains the following values: 
+1, 3, 4, 8, 14, 22 
+All the values are arranged in ascending order . Now, we will observe how the priority 
+queue will look after performing the following operations: 
+o poll(): This function will remove the highest priority element from the priority queue. 
+In the above priority queue, the '1' element has the highest priority , so it will be 
+removed from the priority queue. 
+o add(2): This function will insert '2' element in a priority queue. As 2 is the sm allest 
+element among all the numbers so it will obtain the highest priority. 
+o poll(): It will remove '2' element from the prior ity queue as it has the highest priority 
+queue. 
+o add(5): It will insert 5 element after 4 as 5 is larger than 4 and lesser than 8, so it will 
+obtain the third highest priority in a priority queue. 
+Types of Priority Queue 
+There are two types of priority queue: 
+Ascending order priority queue: In ascending order priority queue, a lower priority number 
+is given as a higher priority in a priority. For example, we take the numbers from 1 to 5 
+arranged in an ascending order like 1,2,3,4,5; therefore, the smallest number, i.e., 1 is given 
+ 
+--- Page 5 ---
+Data Structure  
+5 
+ 
+o Descending order priority queue: In descending order priority queue, a higher 
+priority number is given as a higher priority in a priority. For example, we take the 
+numbers from 1 to 5 arranged in descending order like 5, 4, 3, 2, 1; therefore, the 
+largest number, i.e., 5 is given as the highest priority in a priority queue. 
+ 
+o The priority queue by using the list given below in which  INFO list contains the data 
+elements, PRN list contains the priority numbers of each data element available in 
+the INFO list, and LINK basically contains the address of the next node. 
+o 
+  
+ 
+ Application of Linear queues:  
+1.  Task Scheduling: Queues can be used to schedule tasks based on priority or the 
+order in which they were received.  
+2.  Resource Allocation: Queues can be used to manage and allocate resources, 
+such as printers or CPU processing time.  
+3.  Batch Processing: Queues can be used to handle batch processing jobs, such as 
+data analysis or image renderin g. 
+4.  Message Buffering: Queues can be used to buffer messages in communication 
+systems, such as message queues in messaging systems or buffers in computer 
+networks. 
+--- Page 6 ---
+Data Structure  
+6 
+ 
+5. Event Handling: Queues can be used to handle events in event -driven systems, 
+such as GUI applications or simulation systems.  
+6. Traffic Management: Queues can be used to manage traffic flow in 
+transportation systems, such as airport control systems or road networks.  
+7. Operating systems: Operating systems often use queues to manage processes 
+and resour ces. For example, a process scheduler might use a qu eue to manage 
+the order in which processes are executed.  
+8. Network protocols: Network protocols like TCP and UDP use queues to 
+manage packets that are transmitted over the network. Queues can help to ensure  
+that packets are delivered in the correct order and  at the appropriate rate.  
+9. Printer queues :In printing systems, queues are used to manage the order in 
+which print jobs are processed. Jobs are added to the queue as they are 
+submitted, and the printer pro cesses them in the order they were received.  
+10. Web servers: Web servers use queues to manage incoming requests from 
+clients. Requests are added to the queue as they are received, and they are 
+processed by the server in the order they were received.  
+11. Breadth-first search algorithm: The breadth -first search algo rithm uses a 
+queue to explore nodes in a graph level -by-level. The algorithm starts at a given 
+node, adds its neighbors to the queue, and then processes each neighbor in turn.  
+ 
+Time sharing system: 
+The batched systems provide an environment where various system re sources were 
+used effectively, but it did not provide for user interaction with computer systems. Time -
+sharing is a logical extension of  multiprogramming. The CPU performs many tasks by 
+switches that are so frequent that the user can interact with each program while it is 
+running. A time -shared operating system allows multiple users to share computers 
+simultaneously. With each action or order at a time the  shared system becomes smaller, so 
+only a little CPU time is required for each user. As the system rapidly switches from one 
+user to another, each user is given the impression that the entire computer system is 
+dedicated to its use, although it is being sh ared among multiple users.   
+A time-shared operating system uses CPU scheduling and  multi-programming to 
+provide each user with a small portion  of a shared computer at once. Each user has at least 
+one separate program in memory.  
+--- Page 7 ---
+Data Structure  
+7 
+ 
+A program is loaded into memory and executes, it performs a short period of time 
+either before com pletion or to complete I/O. This short period of time during which the u ser 
+gets the attention of the  CPU is known as  time slice, time slot, or quantum. It is typically 
+of the order of 10 to 100 milliseconds.  
+Time-shared operating systems are mo re complex than multiprogrammed operating 
+systems. In both, multiple jobs must be kept in memory simultaneously, so the system must 
+have memory management and security. To achieve a g ood response time, jobs may have to 
+swap in and out of disk from the  main memory which now serves as a backing store for the 
+main memory. A common method to achieve this goal is virtual memory,  a technique that 
+allows the execution of a job that may not be completel y in memory.  
+ 
+  
+ In the above figure the user 5 is  active state but user 1, user 2, user 3, and user 4 
+are in a waiting state whereas user 6 is in a  ready state. 
+1. Active State – The user’s program is under the control of the CPU. Only one 
+program is available in this state.  
+2. Ready State – The user program is ready t o execute but it is waiting for its turn 
+to get the CPU. More than one user can be in a ready state at a time.  
+3. Waiting State – The user’s program is waiting for some input/out put operation. 
+More than one user can be in a waiting state at a time.  
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 8 ---
+Data Structure  
+8 
+ 
+Introduction of Linked Lists:  
+Linked List is basically chains of nodes where each node contains information such 
+as data and a pointer to the next node in the chain. It is a popular data structure with a 
+wide range of real-world applications. In this article, we will provide a complete 
+introduction of Linked List, which will help you tackle any problem based on Linked List. 
+ 
+Linked List is a linear data structure which looks like a series of nodes, where 
+each node has two parts: data and next pointer. Unlike Arrays, Linked List elements are 
+not stored at a contiguous location. In the linked list there is a head pointer, which points 
+to the first element of the linked list, and if the list is empty then it simply points to null or 
+nothing. 
+ 
+Basic Terminologies of Linked List: 
+ Head: The Head of a linked list is a pointer to the first node or reference of the 
+first node of linked list. This pointer marks the beginning of the linked list. 
+ Node: Linked List consists of a series of nodes where each node has two 
+parts: data and next pointer. 
+ Data: Data is the part of node which stores the information in the linked list. 
+ Next pointer: Next pointer is the part of the node which points to the next node 
+of the linked list. 
+Importance of Linked List: 
+Here are a few advantages of a linked list that is listed below, it will help you understand 
+why it is necessary to know. 
+ Dynamic Data structure: The size of memory can be allocated or de-allocated 
+at run time based on the operation insertion or deletion. 
+ Ease of Insertion/Deleti on: The insertion and deletion of elements are simpler 
+than arrays since no elements need to be shifted after insertion and deletion, Just 
+the address needed to be updated. 
+ Efficient Memory Utilization: As we know Linked List is a dynamic data 
+structure the size increases or decreases as per the requirement so this avoids the 
+wastage of memory.  
+ Implementation: Various advanced data structures can be implemented using a 
+linked list like a stack, queue, graph, hash maps, etc. 
+ 
+--- Page 9 ---
+Data Structure  
+9 
+ 
+Singly linked lists: 
+Singly Linked List is a type of linked list where each node has two 
+parts: data and next pointer. The data part stores the information and the next pointer 
+points to the next node of the linked list. The next pointer of the last node stores null as it is 
+the last node of the linked list and there is no next node. Traversal of items can be done in 
+the forward direction only due to the linking of every node to its next node. 
+ 
+Node Definition of Singly linked list: 
+SN Operation Description 
+1 Insertion at 
+beginning 
+It involves inserting any element at the front of the list. We 
+just need to a few link adjustments to make the new node as 
+the head of the list. 
+2 Insertion at end 
+of the list 
+It involves insertion at the last of the linked list. The new 
+node can be inserted as the only node in the list or it can be 
+inserted as the last one. Different logics a re implemented in 
+each scenario. 
+3 Insertion after 
+specified node 
+It involves insertion after the specified node of the linked list. 
+We need to skip the desire d number of nodes in order to 
+reach the node after which the new node will be inserted. . 
+ 
+ 
+Circularly linked lists: 
+The circular linked list is a linked list where all nodes are connected to form a 
+circle. In a circular linked list, the first node and the last node are connected to each other 
+which forms a circle. There is no NULL at the end. 
+ 
+Circular linked list  
+There are generally two types of circular linked lists: 
+ Circular singly linked list: In a circular Singly linked list, the last node of the 
+list contains a pointer to the first node of the list. We traverse the circular singly 
+--- Page 10 ---
+Data Structure  
+10 
+ 
+linked list until we reach the same node where we started. The circular singly 
+linked list has no beginning or end. No null value is present in the next part of 
+any of the nodes. 
+ 
+Representation of Circular singly linked list  
+ Circular Doubly linked list: Circular Doubly Linked List has properties of both 
+doubly linked list and circular linked list in which two consecutive elements are 
+linked or connected by the previous and next pointer and the last node points to 
+the first node by the next pointer and also the first node points to the last node 
+by the previous pointer. 
+ 
+Representation of circular doubly linked list  
+Note: We will be using the singly circular linked list to represent the working of the 
+circular linked list. 
+Representation of circular linked list: 
+Circular linked lists are similar to single Linked Lists with the exception of connecting the 
+last node to the first node. 
+ 
+Doubly Linked Lists: 
+Doubly linked list is a complex type of linked list in which a node contains a pointer 
+to the previous as well as the next node in the sequence. Therefore, in a doubly linked list, a 
+node consists of three parts: node data, pointer to the next no de in sequence (next pointer) , 
+pointer to the previous node (previous pointer). A sample node in a doubly linked list is 
+shown in the figure. 
+--- Page 11 ---
+Data Structure  
+11 
+ 
+1.  
+ 
+A doubly linked list containing three nodes having numbers from 1 to 3 in their data part, 
+is shown in the following image. 
+ 
+ 
+In C, structure of a node in doubly linked list can be given as : 
+1. struct node    
+2. {   
+3.     struct node *prev;    
+4.     int data;   
+5.     struct node *next;    
+6. }    
+The prev part of the first node and the  next part of the last node will always contain null 
+indicating end in each direction. 
+SN Operation Description 
+1 Insertion at 
+beginning 
+Adding the node into the linked list at beginning. 
+2 Insertion at end Adding the node into the linked list to the end. 
+--- Page 12 ---
+Data Structure  
+12 
+ 
+3 Insertion after 
+specified node 
+Adding the node into the linked list afte r the specified 
+node. 
+4 Deletion at beginning Removing the node from beginning of the list 
+5 Deletion at the end Removing the node from end of the list. 
+6 Deletion of the node 
+having given data 
+Removing the node which is present just afte r the node 
+containing the given data. 
+7 Searching Comparing each node data with the item to be searched 
+and return the location of the item in the list if the item 
+found else return null. 
+8 Traversing Visiting each node of the list at least once in order to 
+perform some specific operation like searching, sorting, 
+display, etc. 
+ 
+Application of Linked List: 
+A linked list is a linear data structure, in which the elements are not stored at 
+contiguous memory locations. The elements in a linked list are linked using pointers  as 
+shown in the below image:   
+ 
+Linked-List 
+Applications of linked list in computer science: 
+1. Implementation of  stacks and queues 
+2. Implementation of graphs:  Adjacency list representation of graphs is the most 
+popular which uses a linke d list to store adjacent vertices.  
+3. Dynamic memory allocation: We use a linked list of free blocks.  
+4. Maintaining a directory of names  
+5. Performing arithmetic operations on long integers  
+--- Page 13 ---
+Data Structure  
+13 
+ 
+6. Manipulation of poly nomials by storing constants in the node of the linked  list 
+7. Representing sparse matrices  
+ 
+Polynomial addition: 
+For adding polynomials vertically, we place the polynomials column -wise vertically. 
+Hence, it is known as the vertical method of adding polynomia ls. Let's understand the steps 
+below to add polynomials vertically. 
+ Step 1: Write the polynomials in standard form. 
+ Step 2:  Place the polynomials in a vertical arrangement, with the like terms 
+placed one above the other in both the polynomials. 
+ Step 3:  If any power term is missing in any polynomial, we write a '0' as 
+its coefficient to avoid confusion in the column-wise arrangement. 
+ Step 4: Perform the calculations by retaining the sign of the terms. 
+ 
+Polynomials are algebraic expressions that consist of constants and variables of 
+different powers. Adding polynomials is a way of combining and summing up terms having 
+the same power. We will be learning about different methods of adding polynomials i n this 
+article. 
+Adding Polynomials Definition 
+Adding polynomials is defined as the addition operation of polynomials. Pol ynomials 
+are algebraic expressions of different degrees. While adding polynomials we follow some 
+specific rules which makes it very simple to do the operation. 
+Rules of Adding Polynomials 
+Look at the two important rules of adding polynomials given below: 
+ Rule 1: The like terms are always combined and added. Unlike terms can never 
+be added. 
+ Rule 2: While adding the terms, the sign always remains the same. 
+Before learning the method of addi ng polynomials, let us first quickly go through the 
+meanings of like terms and unlike terms in any polynomial. 
+ 
+ 
+--- Page 14 ---
+Data Structure  
+14 
+ 
+ 
+Example:   
+Input: 
+     1st number = 5x2 + 4x1 + 2x0 
+     2nd number = -5x1 - 5x0 
+Output: 
+        5x2-1x1-3x0 
+Input: 
+     1st number = 5x3 + 4x2 + 2x0 
+     2nd number = 5x^1 - 5x^0 
+Output: 
+        5x3 + 4x2 + 5x1 - 3x0 
+ 
+ 
